@@ -24,7 +24,7 @@ NeuroKeys is an AI-powered virtual keyboard that allows users to type using only
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. **Clone the repository**
 
@@ -77,8 +77,6 @@ NeuroKeys/
 ├── requirements.txt      # Python dependencies
 └── README.md             # You're here!
 ```
-
----
 
 ##  License
 
