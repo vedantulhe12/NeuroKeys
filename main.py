@@ -24,7 +24,7 @@ class Button:
         self.pos = pos
         self.size = size
         self.text = text
-        self.hoverCount = 0  # New attribute to track hover time
+        self.hoverCount = 0 
 
     def isInside(self, point):
         x, y = self.pos
@@ -68,7 +68,7 @@ while True:
                 cv2.putText(img, button.text, (x + 20, y + 65),
                             cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 4)
 
-                if button.hoverCount > 30:  # ~1 second
+                if button.hoverCount > 30:  # 1 second
                     print(f"Pressed: {button.text}")
                     keyboard.press(button.text)
                     keyboard.release(button.text)
@@ -81,7 +81,7 @@ while True:
                         finalText += button.text
 
                     button.hoverCount = 0
-                    sleep(0.3)  # Prevent instant re-trigger
+                    sleep(0.3)  
             else:
                 button.hoverCount = 0
 
